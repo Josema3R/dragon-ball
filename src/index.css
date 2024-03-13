@@ -1,13 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.scenario{
+  background-image: url('./img/scenario-1.png');
+  background-size: cover; 
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: row;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.selected-characters-container{
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */ 
+  height: 30vh;
+}
+
+.selected-character{
+  margin: 20px;
+}
+
+.char-img-selected{
+  padding: 5px;
+  height: 270px;
+  width: auto;
+  margin: 10px;
+}
+
+.combat-container{
+  display: flex;
+}
+.player-container{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.characterList-container{
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.character-container{
+  margin: 15px;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  height: 170px;
+}
+
+
+
+.character-img{
+  border-radius: 4px;
+  padding: 5px;
+  height: 150px;
+  width: auto;
+  margin: 10px;
+  transition: height 1s ease; /* Agrega una transición suave */
+}
+
+.character-img:hover {
+  height: 170px;
+  width: auto;
+}
+
+
+.dragon-ball-text {
+  margin-top: 10px;
+  font-family: 'Press Start 2P', cursive; /* Utiliza una fuente similar a la de los videojuegos retro */
+  font-size: 40px; /* Tamaño de la letra */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  color: yellow; /* Color de la letra */
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+
+.player-text {
+  margin-top: 0;
+  font-family: 'Press Start 2P', cursive; /* Utiliza una fuente similar a la de los videojuegos retro */
+  font-size: 20px; /* Tamaño de la letra */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  color: yellow; /* Color de la letra */
+  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1; /* Comienza completamente visible */
+  }
+  50% {
+    opacity: 0; /* Se vuelve completamente transparente */
+  }
+  100% {
+    opacity: 1; /* Vuelve a ser completamente visible */
+  }
+}
+
+.elemento-parpadeante {
+  animation: parpadeo 2s infinite; /* Aplica la animación con duración de 1 segundo y se repite infinitamente */
 }
