@@ -1,4 +1,5 @@
 import '../App.css';
+import '../styles/Figths.css'
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 

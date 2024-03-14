@@ -1,4 +1,5 @@
 import '../App.css';
+import '../styles/Characters.css'
 
 export default function Characters(props) {
     const { characters, selectCharacter } = props;

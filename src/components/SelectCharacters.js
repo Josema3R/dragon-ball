@@ -1,4 +1,5 @@
 import '../App.css';
+import '../styles/SelectCharacters.css'
 import { useEffect, useState } from 'react';
 import Characters from './Characters';
 import { useNavigate } from "react-router-dom";
