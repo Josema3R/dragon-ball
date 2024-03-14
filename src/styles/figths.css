@@ -1,0 +1,110 @@
+.barra {
+    width: 300px;
+    /* Ancho total de la barra */
+    height: 20px;
+    /* Altura de la barra */
+    background-color: #333;
+    /* Color de fondo de la barra */
+    border: 2px solid #fff;
+    /* Borde blanco de 2px */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    position: relative;
+    /* Posición relativa para el pseudo-elemento */
+  }
+  
+  .barra::before {
+    content: "";
+    /* Agrega un pseudo-elemento */
+    display: block;
+    /* Convierte el pseudo-elemento en un bloque */
+    width: var(--porcentaje);
+    /* Ancho dinámico basado en el porcentaje */
+    height: 100%;
+    /* Altura igual a la barra */
+    background-color: #ff5733;
+    /* Color de la barra llena (naranja) */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    position: absolute;
+    /* Posición absoluta para alinear con el borde izquierdo */
+    top: 0;
+    /* Alinea con la parte superior */
+    left: 0;
+    /* Alinea con el borde izquierdo */
+  }
+
+
+
+  .selected-character-fight {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    flex-direction: column;
+  }
+  
+  
+  
+  @keyframes teletransportacion {
+    0% {
+      opacity: 0;
+      /* Comienza invisible */
+    }
+  
+    50% {
+      opacity: 1;
+      /* Se vuelve visible a la mitad de la animación */
+    }
+  
+    100% {
+      opacity: 0;
+      /* Desaparece al final de la animación */
+    }
+  }
+  
+
+  
+.bocadillo {
+    position: relative;
+    background-color: #FFF;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  .punta {
+    position: absolute;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent #000 transparent;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .contenido {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin: 10px;
+  }
+  
+  /* Efecto de animación para resaltar el bocadillo */
+  .bocadillo:hover {
+    animation: resaltar 0.5s infinite alternate;
+  }
+  
+  @keyframes resaltar {
+    from {
+      transform: scale(1);
+    }
+  
+    to {
+      transform: scale(1.05);
+    }
+  }

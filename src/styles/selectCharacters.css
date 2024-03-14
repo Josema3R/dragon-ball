@@ -1,0 +1,145 @@
+.selected-characters-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    height: 30vh;
+}
+
+.elemento-parpadeante {
+    animation: parpadeo 2s infinite;
+    /* Aplica la animación con duración de 1 segundo y se repite infinitamente */
+}
+
+.dissapear-top {
+    animation: fadeOutTop 1.5s ease forwards;
+}
+
+@keyframes fadeOutTop {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.selected-character {
+    margin: 20px;
+}
+
+.char-img-selected {
+    padding: 5px;
+    height: 270px;
+    width: auto;
+    margin: 10px;
+}
+
+
+.combat-container {
+    display: flex;
+}
+
+
+
+.player-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.dragon-ball-text {
+    margin-top: 10px;
+    font-family: 'Press Start 2P', cursive;
+    /* Utiliza una fuente similar a la de los videojuegos retro */
+    font-size: 40px;
+    /* Tamaño de la letra */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+    color: yellow;
+    /* Color de la letra */
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+    /* Sombra del texto */
+}
+
+
+.versus-text {
+    font-family: 'Press Start 2P', cursive;
+    /* Utiliza una fuente similar a la de los videojuegos retro */
+    font-size: 50px;
+    /* Tamaño de la letra */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+    color: yellow;
+    /* Color de la letra */
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+    /* Sombra del texto */
+}
+
+
+
+.player-text-dissapear {
+    margin-top: 0;
+    font-family: 'Press Start 2P', cursive;
+    /* Utiliza una fuente similar a la de los videojuegos retro */
+    font-size: 20px;
+    /* Tamaño de la letra */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas */
+    color: yellow;
+    /* Color de la letra */
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+    /* Sombra del texto */
+    animation: fadeOutBottom 1.5s ease forwards;
+}
+
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1;
+        /* Comienza completamente visible */
+    }
+
+    50% {
+        opacity: 0;
+        /* Se vuelve completamente transparente */
+    }
+
+    100% {
+        opacity: 1;
+        /* Vuelve a ser completamente visible */
+    }
+}
+
+
+
+.dissapear-bottom {
+    animation: fadeOutBottom 1.5s ease forwards;
+}
+
+@keyframes fadeOutBottom {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+
+.figthing-container {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    transition: all 2s ease;
+}
