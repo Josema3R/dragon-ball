@@ -42,15 +42,6 @@ code {
   margin: 10px;
 }
 
-.char-img-fighting{
-  transition: all 2s ease;
-  padding: 5px;
-  height: 600px;
-  width: auto;
-  margin: 100px;
-  margin-top: 300px;
-}
-
 .combat-container{
   display: flex;
 }
@@ -97,14 +88,6 @@ code {
   text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5); /* Sombra del texto */
 }
 
-.versus-text{
-  font-family: 'Press Start 2P', cursive; /* Utiliza una fuente similar a la de los videojuegos retro */
-  font-size: 50px; /* Tamaño de la letra */
-  text-transform: uppercase; /* Convierte el texto a mayúsculas */
-  color: yellow; /* Color de la letra */
-  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5); /* Sombra del texto */
-}
-
 
 .player-text {
   margin-top: 0;
@@ -113,16 +96,6 @@ code {
   text-transform: uppercase; /* Convierte el texto a mayúsculas */
   color: yellow; /* Color de la letra */
   text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5); /* Sombra del texto */
-}
-
-.player-text-dissapear {
-  margin-top: 0;
-  font-family: 'Press Start 2P', cursive; /* Utiliza una fuente similar a la de los videojuegos retro */
-  font-size: 20px; /* Tamaño de la letra */
-  text-transform: uppercase; /* Convierte el texto a mayúsculas */
-  color: yellow; /* Color de la letra */
-  text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5); /* Sombra del texto */
-  animation: fadeOutBottom 1.5s ease forwards;
 }
 
 
@@ -140,42 +113,4 @@ code {
 
 .elemento-parpadeante {
   animation: parpadeo 2s infinite; /* Aplica la animación con duración de 1 segundo y se repite infinitamente */
-}
-
-.dissapear-bottom{
-  animation: fadeOutBottom 1.5s ease forwards;
-}
-
-@keyframes fadeOutBottom {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-}
-
-.dissapear-top{
-  animation: fadeOutTop 1.5s ease forwards;
-}
-
-@keyframes fadeOutTop {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-}
-
-.figthing-container{
-  display: flex;
-  height: 60vh;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */ 
-  transition: all 2s ease;
 }
